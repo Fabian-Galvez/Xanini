@@ -114,7 +114,7 @@ One tool is active at a time in the rail. Other buttons are selections, not mode
 | Select      | `A`   | Click, drag, resize, rotate, marquee. This is what the app does with no tool chosen.                                                                                                   |
 | Edit points | `E`   | Shows the shape's points and lets you drag them. A shape that was a square, a star or a cut outline is converted to points the first time, and the drawing does not change when it is. |
 | Pen         | `P`   | Draws a new shape point by point, or freehand.                                                                                                                                         |
-| Roads       | `R`   | Draws a transit map, the kind of map a subway network uses. The Roads section below explains it.                                                                                       |
+| Roads       | `R`   | Draws a Roman Roads map. A Roman Roads map looks like a subway map. The Roman Roads section below explains it.                                                                          |
 | Escape      | fixed | Cancels a half drawn pen path. It also ends a road line you are drawing. With nothing being drawn it returns to Select.                                                                 |
 
 <br>
@@ -169,10 +169,10 @@ booleans and its own points like anything else.
 
 <br>
 
-### Roads
+### Roman Roads
 
-The roads tool draws a transit map, the kind of map a subway or train
-network uses. Every straight part of a road line runs across, up and down,
+The roads tool draws a Roman Roads map. A Roman Roads map looks like a
+subway map. Every straight part of a road line runs across, up and down,
 or at 45 degrees. Every corner of a road line is rounded. The ROADS section
 of the right panel holds the controls. It shows only while the roads tool
 is active.

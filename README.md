@@ -1,6 +1,6 @@
 # Xanini
 
->Draws animated SVG banners, icons, diagrams and transit maps in the browser that render on GitHub.
+>Draws animated SVG banners, icons, diagrams and Roman Roads maps in the browser that render on GitHub.
 >Download and keep anything you create. No dependencies. No login required.
 
 ![Animated Xanini banner built with the app itself](images/Xanini-intro-banner.svg)
