@@ -5425,8 +5425,7 @@ function penFreehand(points, epsilon, tolerance){
    roads field is null draws exactly as it did before this block.
 
    Nothing here touches the DOM. Every function takes plain data and
-   returns plain data or a string, which is what lets tests/roman-roads.mjs
-   run the shipped code instead of a copy of it.
+   returns plain data or a string.
    ============================================================== */
 
 /* Sasha Trubetskoy's 20 colour list, in his order. A new line takes the
@@ -9825,12 +9824,10 @@ function installProject(d){
      4. the same lookup on the parent <g>, then on the root <svg>
    A shape with no paint at all gets the default pink, #f778ba. Rules
    inside @media are not read, so the light scheme is the one that
-   imports. Before 6.5.1 step 2 did not exist, and a chart that paints
-   by class came in with every shape pink.
+   imports. Without step 2, a chart that paints by class would come in
+   with every shape pink.
    text-anchor end and middle move a text box left by its whole width
    or half of it, because x in the file names the anchor point.
-   tests/svg-import-style.mjs runs this function in a headless browser
-   and fails if any of the steps above stops working.
    ============================================================== */
 function svgToProject(txt){
   /* A DOCTYPE is the only place an SVG can declare entities, and entity
@@ -10304,7 +10301,7 @@ function svgToProject(txt){
     if(st[name] != null) return st[name];
     /* CSS order: style="" beats a sheet rule, a sheet rule beats the
        attribute. */
-    // ponytail: the last matching rule wins, selector specificity is not weighed
+    // The last matching rule wins. Selector specificity is not weighed.
     let fromSheet = null;
     sheetRules.forEach(r => {
       try{
